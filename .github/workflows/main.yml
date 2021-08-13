@@ -24,7 +24,7 @@ jobs:
         with:
           images: phlegx/smartctl
           tags: |
-            type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'master') }}
+            type=raw,value=latest,enable=${{ endsWith(GitHub.ref, 'main') }}
             type=ref,event=tag
           flavor: |
             latest=true
