@@ -1,6 +1,6 @@
-FROM debian:stable-slim
+FROM debian:bullseye-slim
 
-ENV SMARTMONTOOLS_VERSION 6.6-1
+ENV SMARTMONTOOLS_VERSION 7.2-1
 
 RUN apt-get update && apt-get install -y \
       smartmontools=$SMARTMONTOOLS_VERSION \
